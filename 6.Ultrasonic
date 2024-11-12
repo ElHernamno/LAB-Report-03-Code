@@ -1,6 +1,6 @@
 /*
 Code Used For Initialising An Ultrasonic Sensor
-
+Digital output
 */
 const int trigPin = 10;  //identify variables
 const int echoPin = 13;
