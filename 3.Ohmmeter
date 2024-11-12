@@ -1,12 +1,12 @@
 /*
 An Ohmmeter code for arduino uno
 Analog input
-
+*/
 int analogPin = A0;   //initialisantion of pins and variables
 int real = 0;
 int Vin = 5;
 float Vout = 0;
-float R1 = 100;
+float R1 = 220;
 float R2 = 0;
 float buffer = 0;
 
