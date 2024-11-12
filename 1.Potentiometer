@@ -1,4 +1,5 @@
-
+/*
+Basic Program For Potentiometer
 
 int pot = A0; //potentiemeter pin 
 int value = 0; //potentiemeter Value 
