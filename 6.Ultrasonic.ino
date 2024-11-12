@@ -1,10 +1,14 @@
-const int trigPin = 10;
+/*
+Code Used For Initialising An Ultrasonic Sensor
+
+*/
+const int trigPin = 10;  //identify variables
 const int echoPin = 13;
 float duration, distance;
  
 void setup() {
-  Serial.begin (9600);
-  pinMode(trigPin, OUTPUT);
+  Serial.begin (9600);         //set up arduino pins
+  pinMode(trigPin, OUTPUT);    //ultrasonic sensor has an input and an outpu
   pinMode(echoPin, INPUT);
 }
  
