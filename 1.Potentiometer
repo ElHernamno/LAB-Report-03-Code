@@ -1,5 +1,6 @@
 /*
 Basic Program For Potentiometer
+Analog input
 */
 int pot = A0; //potentiemeter pin 
 int value = 0; //potentiemeter Value 
