@@ -23,10 +23,10 @@ void loop() {
   unsigned long currentMillis = millis();
 
   if (currentMillis - previousMillis >= interval) {
-    // save the last time you blinked the LED
+    // save the last time the LED blinked
     previousMillis = currentMillis;
 
-    // if the LED is off turn it on and vice-versa:
+    // if the LED is off turn on
     if (ledState == LOW) {
       ledState = HIGH;
     } else {
