@@ -1,5 +1,9 @@
-int analogPin = A0;
-int raw = 0;
+/*
+An Ohmmeter code for arduino uno
+Analog input
+
+int analogPin = A0;   //initialisantion of pins and variables
+int real = 0;
 int Vin = 5;
 float Vout = 0;
 float R1 = 100;
@@ -11,14 +15,14 @@ Serial.begin(9600);
 }
 
 void loop(){
-  raw = analogRead(analogPin);
-  if(raw){
-    buffer = raw * Vin;
+  real = analogRead(analogPin);  //reads the value of "real" as the read value of A0
+  if(real){                   //if statement that calculates solution based on variables
+    buffer = real * Vin;
     Vout = (buffer)/1024.0;
     buffer = (Vin/Vout) - 1;
     R2= R1 * buffer;
     
-    Serial.print("R2: ");
+    Serial.print("R2: ");    //prints the results of the if statement on the serial monitor
     Serial.println(R2);
     delay(1000);
   }
