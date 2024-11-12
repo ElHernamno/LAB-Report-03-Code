@@ -1,5 +1,7 @@
-
-
+/*
+A Code That Allows The Usage Of Both Ultrasonic AND DHT11 Sensors
+Digital input and output
+*/
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
