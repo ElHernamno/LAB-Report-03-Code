@@ -59,9 +59,9 @@ void setup() {
 }
 
 void loop() {
-  // Delay between measurements.
+  
   delay(delayMS);
-  // Get temperature event and print its value.
+  // Get the temperature and prints it
   sensors_event_t event;
   dht.temperature().getEvent(&event);
   if (isnan(event.temperature)) {
@@ -72,7 +72,7 @@ void loop() {
     Serial.print(event.temperature);
     Serial.println(F("°C"));
   }
-  // Get humidity event and print its value.
+  // Gets the humidity and prints it.
   dht.humidity().getEvent(&event);
   if (isnan(event.relative_humidity)) {
     Serial.println(F("Error reading humidity!"));
