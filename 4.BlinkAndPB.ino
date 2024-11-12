@@ -1,4 +1,7 @@
-
+/*
+A Blink Program with PushButton Integration
+Digital input and output
+*/
 const int ledPin = 2 ; // the number of the LED pin
 const int PBPin = 3;  // the number of the PB pin
 int ledState = LOW;  // ledState used to set the LED
